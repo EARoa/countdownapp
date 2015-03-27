@@ -14,6 +14,7 @@
 		10850A171AC5ADB5003403CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10850A161AC5ADB5003403CA /* Images.xcassets */; };
 		10850A1A1AC5ADB5003403CA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10850A181AC5ADB5003403CA /* LaunchScreen.xib */; };
 		10850A261AC5ADB5003403CA /* countdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10850A251AC5ADB5003403CA /* countdownTests.m */; };
+		10850A301AC5AE06003403CA /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 10850A2F1AC5AE06003403CA /* gradient.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		10850A1F1AC5ADB5003403CA /* countdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = countdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10850A241AC5ADB5003403CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10850A251AC5ADB5003403CA /* countdownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = countdownTests.m; sourceTree = "<group>"; };
+		10850A2F1AC5AE06003403CA /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		10850A091AC5ADB5003403CA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				10850A2F1AC5AE06003403CA /* gradient.png */,
 				10850A0A1AC5ADB5003403CA /* Info.plist */,
 				10850A0B1AC5ADB5003403CA /* main.m */,
 			);
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10850A151AC5ADB5003403CA /* Main.storyboard in Resources */,
+				10850A301AC5AE06003403CA /* gradient.png in Resources */,
 				10850A1A1AC5ADB5003403CA /* LaunchScreen.xib in Resources */,
 				10850A171AC5ADB5003403CA /* Images.xcassets in Resources */,
 			);
