@@ -14,9 +14,34 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    /******** 1 ********/
+    destinationDate = [NSDate dateWithTimeIntervalSince1970:1428674400];
+    
+    /******** 2 ********/
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateLabel) userInfo:nil repeats:YES];
+    
+}
+
+/******** 1 ********/
+-(void)updateLabel {
+    
+    /******** 2 ********/
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    
+    /******** 3 ********/
+    int units = NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
+    
+    /******** 4 ********/
+    NSDateComponents *components = [calendar components:units fromDate:[NSDate date] toDate:destinationDate options:0];
+    
+    /******** 5 ********/
+    [countdownLabel setText:[NSString stringWithFormat:@"%ld : %ld : %ld : %ld", (long)[components day],(long)[components hour],(long)[components minute], (long)[components second]]];
+    
 }
 
 - (void)didReceiveMemoryWarning {

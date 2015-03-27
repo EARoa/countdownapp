@@ -8,8 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    
+    /******** 1 ********/
+    NSDate *destinationDate;
+    
+    /******** 2 ********/
+    IBOutlet UILabel *countdownLabel;
+    
+    /******** 3 ********/
+    NSTimer *timer;
+    
+}
 
+/******** 4 ********/
+-(void)updateLabel;
 
 @end
-
